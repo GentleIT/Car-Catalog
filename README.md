@@ -1,29 +1,35 @@
-# Practic
+Fullstack-приложение, объединяющее серверную логику на Go и современный интерфейс на Vue 3.
 
-This template should help get you started developing with Vue 3 in Vite.
+Features:
+    - Авторизация с использованием JWT токена (имитация).
+    - Подключение и использование данных со стороннего API (погода).
+    - Возможность добавления новой машины в общий "каталог" / гараж (в базу данных).
+    - Возможность увидеть весь развернётый список машин и поиск нужной модели машины.
 
-## Recommended IDE Setup
+Стек технологий
+    - Backend: Go (Golang)
+    - Frontend: Vue.js 3 + Vite
+    - Инструменты: REST API, Node.js
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Основной функционал
+    - Архитектура с разделением Frontend и Backend.
+    - Обработка данных на стороне сервера (Go).
+    - Динамический интерфейс на Composition API (Vue).
+    - Настроенная среда сборки и тестирования.
 
-## Customize configuration
+Структура проекта
+    - src/ — Исходный код фронтенда (Vue-компоненты).
+    - public/ — Статические ресурсы.
+    - test/ — Модульные тесты.
+    - go.mod / main.go — Конфигурация бэкенда.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+Запуск проекта:
+Фронтенд (Node.js):
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm install
 npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+Бэкенд (Go):
+```
+go run main.go
 ```
